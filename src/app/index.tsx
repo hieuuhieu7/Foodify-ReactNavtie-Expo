@@ -4,7 +4,7 @@ const AppRoot = () => {
 
     return (
         <View>
-            <Text>NGUYEN NGOC HIEU</Text>
+            <Text>NGUYEN NGOC HIEU 7</Text>
         </View>
     );
 }

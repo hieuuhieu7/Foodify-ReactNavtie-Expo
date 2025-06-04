@@ -6,12 +6,12 @@ import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import Home from './components/learn/home';
-import Like from './components/learn/like';
-import HomeDetail from './components/learn/home.detail';
-import LikeDetail from './components/learn/like.detail';
-import About from './components/learn/about';
-import ChangePassword from './components/learn/changePassword';
+import Home from './src/components/learn/home';
+import Like from './src/components/learn/like';
+import HomeDetail from './src/components/learn/home.detail';
+import LikeDetail from './src/components/learn/like.detail';
+import About from './src/components/learn/about';
+import ChangePassword from './src/components/learn/changePassword';
 
 export default function App() {
 
