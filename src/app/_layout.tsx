@@ -13,8 +13,12 @@ const RootLayout = () => {
         // </View>
 
         <Stack
-            screenOptions={{ headerShown: false }}
+        // screenOptions={{ headerShown: false }}
         >
+            <Stack.Screen name="index"
+                options={{ headerShown: false }}
+            />
+
             <Stack.Screen name="(tabs)"
                 options={{ title: "Home Page" }}
             />
