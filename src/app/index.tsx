@@ -1,4 +1,4 @@
-import { Link } from "expo-router";
+import { Link, Redirect } from "expo-router";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 import { COLOR } from "./utils/constant";
 import ButtonPrimary from "../components/button/button.primary";
@@ -9,6 +9,16 @@ import { LinearGradient } from "expo-linear-gradient";
 
 
 const WelComePage = () => {
+
+    const onPress = () => {
+        alert('Click')
+    }
+
+    if (true) {
+        return (
+            <Redirect href={'/(auth)/register'} />
+        )
+    }
 
     return (
         <View style={styles.container}>
@@ -33,6 +43,8 @@ const WelComePage = () => {
                             <View style={{ gap: 20 }}>
                                 <View style={styles.flexButton}>
                                     <ButtonPrimary
+                                        onPress={onPress}
+
                                         titleText='Facebook'
                                         textStyle={{ textTransform: "uppercase" }}
                                         iconStyle={
@@ -41,6 +53,8 @@ const WelComePage = () => {
                                     // alignStyle={{ alignSelf: 'auto' }}
                                     />
                                     <ButtonPrimary
+                                        onPress={onPress}
+
                                         titleText='Google'
                                         textStyle={{ textTransform: "uppercase" }}
                                         iconStyle={
@@ -51,6 +65,8 @@ const WelComePage = () => {
                                 </View>
                                 <View>
                                     <ButtonPrimary
+                                        onPress={onPress}
+
                                         titleText='Start with your email'
                                         textStyle={{ textTransform: "capitalize", color: 'white' }}
                                         // iconStyle={
